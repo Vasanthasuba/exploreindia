@@ -1,0 +1,100 @@
+<html>
+<title>destination</title>
+<style>
+.mySlides {
+display:none;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  font-size: 17px;
+ }
+
+.container {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+}
+</style>
+<body>
+<h2 ><center>SOME OF OUR PACKAGES</center></h2>
+<center>
+<div class="content display-container">
+
+<div class="display-container mySlides">
+  <img src="IMG-20220717-WA0004.jpg" style="width:50%"  "height=10%">
+  <div class="display-bottomleft large container padding-16 black">
+    Beach
+  </div>
+</div>
+
+<div class="display-container mySlides">
+  <img src="IMG-20220717-WA0005.jpg" style="width:50%" "height=10%">
+  <div class="display-bottomleft large container padding-16 black">
+    Golden Temple
+  </div>
+</div>
+
+<div class="display-container mySlides">
+  <img src="IMG-20220717-WA0006.jpg" style="width:50%" "height=40%">
+  <div class="display-bottomleft large container padding-16 black">
+    Shimla
+  </div>
+</div>
+
+<div class="display-container mySlides">
+  <img src="IMG-20220717-WA0000.jpg" style="width:50%" "height=40%">
+  <div class="display-bottomleft large container padding-16 black">
+    Taj Mahal
+  </div>
+</div>  
+  
+<div class="display-container mySlides">
+  <img src="IMG-20220717-WA0001.jpg" style="width:50%" "height=40%">
+  <div class="display-bottomleft large container padding-16 black">
+    Kodaikanal
+  </div>
+</div>  
+  
+<div class="display-container mySlides">
+  <img src="IMG-20220717-WA0002.jpg" style="width:50%" "height=40%">
+  <div class="display-bottomleft large container padding-16 black">
+    OOTY
+  </div>
+</div>
+  
+<div class="display-container mySlides">
+  <img src="IMG-20220717-WA0003.jpg" style="width:50%" "height=40%">
+  <div class="display-bottomleft large container padding-16 black">
+    GOA
+  </div>
+</div>
+  <button class="button black display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="button black display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+</center>
+</body>
+</html>
